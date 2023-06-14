@@ -9,36 +9,20 @@ public class CalculatorServiceImpl implements CalculatorServiceInterfeis {
         return "Добро пожаловать в калькулятор";
     }
 
-    public String plus(Integer num1, Integer num2) {
-        if ((num1 == null) || (num2 == null)) {
-            return "Вам необходимо ввести число";
-        } else {
-            return num1 + " + " + num2 + " = " + (num1 + num2);
-        }
+    public Integer plus(Integer num1, Integer num2) {
+        return num1 + num2;
     }
 
-    public String minus(Integer num1, Integer num2) {
-        if ((num1 == null) || (num2 == null)) {
-            return "Вам необходимо ввести число";
-        } else {
-            return num1 + " - " + num2 + " = " + (num1 - num2);
-        }
+    public Integer minus(Integer num1, Integer num2) {
+        return num1 - num2;
     }
 
-    public String divide(Integer num1, Integer num2) {
-        if (num2 == 0) {
-            return "ArithmeticException";
-        } else {
-            return num1 + " / " + num2 + " = " + (num1 / num2);
-        }
+    public Integer divide(Integer num1, Integer num2) {
+        return num1 / num2;
     }
 
-    public String multiply(Integer num1, Integer num2) {
-        if ((num1 == null) || (num2 == null)) {
-            return "Вам необходимо ввести число";
-        } else {
-            return num1 + " * " + num2 + " = " + (num1 * num2);
-        }
+    public Integer multiply(Integer num1, Integer num2) {
+        return num1 * num2;
     }
 }
 
